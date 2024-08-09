@@ -10,21 +10,17 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#login">Login</a></li>
             <li><a href="#attendance">Attendance</a></li>
             <li><a href="#messaging">Messaging</a></li>
             <li><a href="#students">Students</a></li>
             <li><a href="#results">Results</a></li>
+            <li><a href="#report">Report Generation</a></li>
             <li><a href="#support">Support</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <div id="home" class="section">
-        <h1>Welcome to the School Management System</h1>
-        <p>Please log in to access the features.</p>
-    </div>
-
+    <!-- Login Section -->
     <div id="login" class="section">
         <h2>Login</h2>
         <form id="loginForm">
@@ -34,8 +30,10 @@
             <input type="password" id="password" required>
             <button type="submit">Login</button>
         </form>
+        <p id="loginMessage"></p>
     </div>
 
+    <!-- Attendance Section -->
     <div id="attendance" class="section">
         <h2>Attendance</h2>
         <form id="attendanceForm">
@@ -48,8 +46,10 @@
             </select>
             <button type="submit">Submit Attendance</button>
         </form>
+        <p id="attendanceMessage"></p>
     </div>
 
+    <!-- Messaging Section -->
     <div id="messaging" class="section">
         <h2>Messaging</h2>
         <form id="messageForm">
@@ -59,13 +59,16 @@
             <textarea id="message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+        <p id="messageSent"></p>
     </div>
 
+    <!-- Student Information Section -->
     <div id="students" class="section">
         <h2>Student Information</h2>
-        <!-- This section can be expanded to include student info management -->
+        <p id="studentInfo"></p>
     </div>
 
+    <!-- Results Entry Section -->
     <div id="results" class="section">
         <h2>Results Entry</h2>
         <form id="resultsForm">
@@ -77,8 +80,17 @@
             <input type="text" id="grade" required>
             <button type="submit">Submit Result</button>
         </form>
+        <p id="resultMessage"></p>
     </div>
 
+    <!-- Report Generation Section -->
+    <div id="report" class="section">
+        <h2>Report Generation</h2>
+        <button id="generateReport">Generate Report</button>
+        <p id="reportOutput"></p>
+    </div>
+
+    <!-- Support Section -->
     <div id="support" class="section">
         <h2>Customer Support</h2>
         <form id="supportForm">
@@ -86,9 +98,11 @@
             <textarea id="supportMessage" required></textarea>
             <button type="submit">Submit Ticket</button>
         </form>
+        <p id="supportResponse"></p>
     </div>
 
     <!-- Include JavaScript -->
     <script src="script.js"></script>
+    <script src="data.js"></script>
 </body>
 </html>
