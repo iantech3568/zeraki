@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#messaging">Messaging</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="home" class="section">
+        <h1>Welcome to the School Management System</h1>
+        <p>Please log in to access the features.</p>
+    </div>
+
+    <div id="login" class="section">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="attendance" class="section">
+        <h2>Attendance</h2>
+        <form id="attendanceForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            <label for="attendanceStatus">Status:</label>
+            <select id="attendanceStatus">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button type="submit">Submit Attendance</button>
+        </form>
+    </div>
+
+    <div id="messaging" class="section">
+        <h2>Messaging</h2>
+        <form id="messageForm">
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div id="students" class="section">
+        <h2>Student Information</h2>
+        <!-- This section can be expanded to include student info management -->
+    </div>
+
+    <div id="results" class="section">
+        <h2>Results Entry</h2>
+        <form id="resultsForm">
+            <label for="studentResultName">Student Name:</label>
+            <input type="text" id="studentResultName" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" required>
+            <button type="submit">Submit Result</button>
+        </form>
+    </div>
+
+    <div id="support" class="section">
+        <h2>Customer Support</h2>
+        <form id="supportForm">
+            <label for="supportMessage">Describe your issue:</label>
+            <textarea id="supportMessage" required></textarea>
+            <button type="submit">Submit Ticket</button>
+        </form>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
